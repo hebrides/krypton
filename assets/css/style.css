@@ -1,0 +1,240 @@
+
+/*  Theme Name: Kraybill & Associates    */
+
+
+/* ==========================================================================
+   GENERAL
+   ========================================================================== */
+
+body {
+  word-wrap: break-word;
+  font-size: 13px;
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body a {
+  color: #0093c8;
+}
+
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
+
+/* 
+   SCREEN READERS
+   ========================================================================== */
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+}
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+  background-color: #f1f1f1;
+  border-radius: 3px;
+  box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+  clip: auto !important;
+  color: #21759b;
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  height: auto;
+  left: 5px;
+  line-height: normal;
+  padding: 15px 23px 14px;
+  text-decoration: none;
+  top: 5px;
+  width: auto;
+  z-index: 100000; 
+}
+
+
+/* ==========================================================================
+   HEADER
+   ========================================================================== */
+
+.navbar-kr {
+  border-bottom: 4px solid #0093c8;
+  box-shadow: 1px 1px 4px rgba(54, 54, 54, 0.5);
+  padding: 18px;
+  background: #FFFFFF;
+  /* 3d acceleration trick */
+  transform: translate3d(0px, 0px, 0px);
+}
+.navbar-brand-kr { padding: 0 15px; height: 57px; }
+
+/* Round buttons * 
+.menu-fill-kr li > a { padding: 18px; border-radius: 5px;}
+.menu-fill-kr li > a   { padding-left: 4px;}
+*/
+
+/* Fill blocks */
+.menu-fill-kr li > a { 
+  display: block;
+  padding: 36px 18px 37px;
+  margin-top: -18px;  
+  margin-bottom: -18px;
+  text-decoration: none;
+  color: #222222 !important; 
+  font-size: 13px;
+} 
+.menu-fill-kr .active > a {
+  color: #ffffff !important;
+  background: #0093c8 !important; 
+}
+
+/* Border-bottom 
+.navbar-default .navbar-nav > li > a  {
+  color: #222222 !important;
+  margin-top: -18px;
+  margin-bottom: -54px;
+  padding: 36px 18px 19px 18px;
+  border-bottom: 18px solid #ffffff;
+  -webkit-transition: all 0.0s ease-in-out;
+  -moz-transition: all 0.0s ease-in-out;
+  -o-transition: all 0.0s ease-in-out;
+  transition: all 0.0s ease-in-out;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+  color: #222222;
+  background: #ffffff;
+  border-bottom: 18px solid #3e93c4;
+  -webkit-transition: 0.0s;
+  -moz-transition: 0.0s;
+  -o-transition: 0.0s;
+  transition: 0.0s;
+}
+.navbar-kr {
+  padding-bottom: 18px;
+}
+*/
+
+
+
+
+
+/* ==========================================================================
+   Content
+   ========================================================================== */
+
+.banner-section {
+  height: 100%;
+  padding-top: 97px;
+  text-align: center;
+  background: url(../../assets/images/bg/bg-img-factory-dark.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  /* force hardware acceleration */
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+
+}
+.banner-section img { width: 10%;}
+.tile-section {
+  height: 100%;
+  background: #fff url(../../assets/images/bg/bg-tile-white.png);
+  padding-top: 100px; 
+  text-align: center;
+
+}
+.white-section {
+  height: 100%;
+  background: #fff;
+  padding-top: 100px; 
+  text-align: center;
+}
+.headline-banner {
+  color: #ffffff;
+  padding-top: 10%;
+  font-size: 64px;
+  font-weight: 200;
+  line-height: 72px;
+  display: block;
+  word-wrap: break-word;
+  text-shadow: 0px 4px 44px rgba(0, 0, 0, 1.0);
+  margin-bottom: 100px;
+}
+.headline {
+  color: #777;
+  font-size: 56px;
+  font-weight: 200;
+  line-height: 56px;
+  display: block;
+  word-wrap: break-word;
+}
+
+
+/* ==========================================================================
+   FORMS
+   ========================================================================== */
+
+
+
+
+/* ==========================================================================
+   MEDIA QUERIES
+   ========================================================================== */
+
+@media screen and (min-width: 768) and (max-width: 980px){
+ .container {
+    width: 800px;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 991px) {
+  .headline-banner, .headline { 
+    font-size: 44px;
+    line-height: 56px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar { 
+    padding: 18px 0 0;
+  }
+  nav .pull-right {
+    float: none !important;
+  }
+  nav ul {
+    margin: 0 -15px 0 -15px !important;
+  }
+  nav ul li { border-top: 1px solid #efefef;}
+  .navbar-header { margin-bottom: 18px; }
+  .navbar-toggle {
+    margin-top: 13px;
+    border-radius: 2px;
+  }
+  .menu-fill-kr li > a {
+    text-align: center;
+    padding: 10px; 
+    margin: 0; 
+    border-bottom: 0;
+  }
+  .menu-fill-kr .active > a { 
+    color: #fefefe;
+    background: #3a3c41;
+    border-bottom: 0; 
+  }
+  .headline-banner, .headline { 
+    font-size: 36px;
+    line-height: 44px;
+  }
+  .home-section {
+    height: 100%;
+  }
+}
+
+
